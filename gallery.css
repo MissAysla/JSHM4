@@ -1,0 +1,53 @@
+/* Basic Page Styling */
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Main Image Display Area */
+#image {
+    width: 575px;
+    height: 650px;
+    line-height: 650px;
+    border: 5px solid yellow;
+    background-color: black;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    margin: 20px auto;
+}
+
+/* Thumbnail Styling */
+.preview {
+    width: 10%;
+    margin: 10px;
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.preview:hover {
+    transform: scale(1.2);
+    border-color: yellow;
+}
+
+/* Every Other Image Styled Differently */
+.preview:nth-child(even) {
+    border-radius: 50%;
+}
+
+/* Accessibility: Keyboard Focus Styling */
+.preview:focus {
+    border-color: red;
+    outline: none;
+    transform: scale(1.2);
+}
